@@ -17,7 +17,7 @@ namespace ProyectoITXamarin
         private async void SimpleButton_Clicked(object sender, EventArgs e)
         {
             var request = new HttpRequestMessage();
-            request.RequestUri = new Uri("https://api.jsonbin.io/b/606cd11e9c59a9732cae995a");
+            request.RequestUri = new Uri("https://api.jsonbin.io/b/606e153bceba857326707915");
             request.Method = HttpMethod.Get;
             request.Headers.Add("Accpet", "application/json");
             var client = new HttpClient();
@@ -35,5 +35,6 @@ namespace ProyectoITXamarin
             DevExpress.XamarinForms.DataGrid.Initializer.Init();
             DevExpress.XamarinForms.Editors.Initializer.Init();
         }
+        public bool ShowAutoFilterRow { get; set; }
     }
 }

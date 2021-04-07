@@ -10,11 +10,11 @@
         <vm:ClienteRepository/>
     </ContentPage.BindingContext>
     <StackLayout>
-        <dxg:DataGridView x:Name="grid" ItemsSource="{Binding Clientes}">
+        <dxg:DataGridView x:Name="grid" ItemsSource="{Binding Clientes}" ShowAutoFilterRow="True">
             <dxg:DataGridView.Columns>
-                <dxg:TextColumn FieldName="Name" Caption="name" Width="150" />
+                <dxg:TextColumn FieldName="Name" Caption="name" Width="150" AutoFilterCondition="Contains"/>
                 <dxg:TextColumn FieldName="Ruc" Caption="ruc" Width="150"/>
-                <dxg:TextColumn FieldName="Codigo" Caption="codigo" Width="150" />
+                <dxg:TextColumn FieldName="Codigo" Caption="codigo" Width="150"/>
             </dxg:DataGridView.Columns>
         </dxg:DataGridView>
     <dxe:SimpleButton Text = "Llamado" 
