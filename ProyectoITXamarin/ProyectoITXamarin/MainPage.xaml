@@ -11,8 +11,12 @@
     </ContentPage.BindingContext>
     <StackLayout>
         <dxg:DataGridView x:Name="grid" ItemsSource="{Binding Clientes}">
-        
-    </dxg:DataGridView>
+            <dxg:DataGridView.Columns>
+                <dxg:TextColumn FieldName="Name" Caption="name" Width="150" />
+                <dxg:TextColumn FieldName="Ruc" Caption="ruc" Width="150"/>
+                <dxg:TextColumn FieldName="Codigo" Caption="codigo" Width="150" />
+            </dxg:DataGridView.Columns>
+        </dxg:DataGridView>
     <dxe:SimpleButton Text = "Llamado" 
                   Icon = "add" 
                   BorderThickness="2"
