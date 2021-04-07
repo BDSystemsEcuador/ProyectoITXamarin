@@ -15,3 +15,4 @@ C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamari
 C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Editors.dll
 C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\bin\Debug\netstandard2.0\DevExpress.XamarinForms.Grid.dll
 C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csproj.CopyComplete
+C:\Users\rober\source\repos\ProyectoITXamarin\ProyectoITXamarin\ProyectoITXamarin\obj\Debug\netstandard2.0\ProyectoITXamarin.csprojAssemblyReference.cache

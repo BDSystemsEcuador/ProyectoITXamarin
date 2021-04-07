@@ -14,7 +14,11 @@ namespace ProyectoITXamarin
 {
     public partial class MainPage : ContentPage
     {
-        private async void SimpleButton_Clicked(object sender, EventArgs e)
+        //private async void SimpleButton_Clicked(object sender, EventArgs e)
+        //{
+           
+        //}
+        public async void TraerDatos()
         {
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri("https://api.jsonbin.io/b/606e153bceba857326707915");
@@ -34,6 +38,7 @@ namespace ProyectoITXamarin
             InitializeComponent();
             DevExpress.XamarinForms.DataGrid.Initializer.Init();
             DevExpress.XamarinForms.Editors.Initializer.Init();
+            TraerDatos();
         }
         public bool ShowAutoFilterRow { get; set; }
     }
