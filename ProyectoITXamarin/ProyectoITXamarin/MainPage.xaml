@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProyectoITXamarin"
+             xmlns:dxg="http://schemas.devexpress.com/xamarin/2014/forms/datagrid"
+             xmlns:dxe="http://schemas.devexpress.com/xamarin/2014/forms/editors"
+             xmlns:vm="clr-namespace:ProyectoITXamarin.DataModel"
+             x:Class="ProyectoITXamarin.MainPage">
+    <ContentPage.BindingContext>
+        <vm:ClienteRepository/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <dxg:DataGridView x:Name="grid" ItemsSource="{Binding Clientes}">
+        
+    </dxg:DataGridView>
+    <dxe:SimpleButton Text = "Llamado" 
+                  Icon = "add" 
+                  BorderThickness="2"
+                  PressedBorderColor="DarkOrange"
+                  DisabledBorderColor="DarkGray"
+                  TextColor="Black"
+                  PressedTextColor="White"
+                  DisabledTextColor="DarkGray"
+                  IconColor="Black"
+                  PressedIconColor="White"
+                  DisabledIconColor="DarkGray"
+                  BackgroundColor="white"
+                  DisabledBackgroundColor="Brown"
+                  PressedBackgroundColor="Gray"      
+                  Clicked = "SimpleButton_Clicked"/>
+    </StackLayout>
+</ContentPage>
+    
