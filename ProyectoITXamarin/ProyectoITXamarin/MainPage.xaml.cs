@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using System.Net;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Runtime.CompilerServices;
 using ProyectoITXamarin.DataModel;
 
 namespace ProyectoITXamarin
@@ -21,7 +22,8 @@ namespace ProyectoITXamarin
         public async void TraerDatos()
         {
             var request = new HttpRequestMessage();
-            request.RequestUri = new Uri("https://api.jsonbin.io/b/606e153bceba857326707915");
+            request.RequestUri = new Uri("https://api.jsonbin.io/b/606e9b4d9c59a9732caf5cf3");
+            //ttps://api.jsonbin.io/b/606e153bceba857326707915
             request.Method = HttpMethod.Get;
             request.Headers.Add("Accpet", "application/json");
             var client = new HttpClient();
@@ -38,6 +40,7 @@ namespace ProyectoITXamarin
             InitializeComponent();
             DevExpress.XamarinForms.DataGrid.Initializer.Init();
             DevExpress.XamarinForms.Editors.Initializer.Init();
+            DevExpress.XamarinForms.CollectionView.Initializer.Init();
             TraerDatos();
         }
         public bool ShowAutoFilterRow { get; set; }

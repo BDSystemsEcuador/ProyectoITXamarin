@@ -17,12 +17,12 @@ namespace ProyectoITXamarin {
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::DevExpress.XamarinForms.DataGrid.DataGridView grid;
+        private global::DevExpress.XamarinForms.CollectionView.DXCollectionView grid;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
-            grid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.DataGrid.DataGridView>(this, "grid");
+            grid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.CollectionView.DXCollectionView>(this, "grid");
         }
     }
 }

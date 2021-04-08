@@ -2280,11 +2280,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rober\\source\\repos\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.Android\\ProyectoITXamarin.Android.csproj",
+      "projectUniqueName": "C:\\Users\\rober\\source\\repos\\ITXamarinCollectionView\\ProyectoITXamarin\\ProyectoITXamarin.Android\\ProyectoITXamarin.Android.csproj",
       "projectName": "ProyectoITXamarin.Android",
-      "projectPath": "C:\\Users\\rober\\source\\repos\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.Android\\ProyectoITXamarin.Android.csproj",
+      "projectPath": "C:\\Users\\rober\\source\\repos\\ITXamarinCollectionView\\ProyectoITXamarin\\ProyectoITXamarin.Android\\ProyectoITXamarin.Android.csproj",
       "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rober\\source\\repos\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.Android\\obj\\",
+      "outputPath": "C:\\Users\\rober\\source\\repos\\ITXamarinCollectionView\\ProyectoITXamarin\\ProyectoITXamarin.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2305,8 +2305,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\rober\\source\\repos\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj": {
-              "projectPath": "C:\\Users\\rober\\source\\repos\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj"
+            "C:\\Users\\rober\\source\\repos\\ITXamarinCollectionView\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj": {
+              "projectPath": "C:\\Users\\rober\\source\\repos\\ITXamarinCollectionView\\ProyectoITXamarin\\ProyectoITXamarin\\ProyectoITXamarin.csproj"
             }
           }
         }

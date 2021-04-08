@@ -4,9 +4,83 @@
              xmlns:local="clr-namespace:ProyectoITXamarin"
              xmlns:dxg="http://schemas.devexpress.com/xamarin/2014/forms/datagrid"
              xmlns:dxe="http://schemas.devexpress.com/xamarin/2014/forms/editors"
+             xmlns:dxcv="http://schemas.devexpress.com/xamarin/2014/forms/collectionview"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              xmlns:vm="clr-namespace:ProyectoITXamarin.DataModel"
-             x:Class="ProyectoITXamarin.MainPage">
+             x:Class="ProyectoITXamarin.MainPage"
+             ios:Page.UseSafeArea="True">
     <ContentPage.BindingContext>
+        <vm:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="LightGreen" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <dxcv:DXCollectionView x:Name="grid" ItemsSource="{Binding Clientes}" 
+                           SelectionMode="Single" 
+                           SelectedItem="collectionView.SelectedItem = null">
+        <dxcv:DXCollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="1"
+                             Padding="18,1,18,7"
+                             Margin="0,0,17,0"
+                             Orientation="Vertical">
+                        <Label Text="{Binding Name}"
+                           FontSize="18"
+                           Margin="0,2"
+                           TextColor="#434549"/>
+                        <Label Text="{Binding Ruc}"
+                               FontSize="15"
+                               TextColor="#687875"/>
+                        <Label Text="{Binding Codigo}"
+                               FontSize="15"
+                               TextColor="#687875"/>
+                    </StackLayout>
+                </Grid>
+            </DataTemplate>
+        </dxcv:DXCollectionView.ItemTemplate>
+        <dxcv:DXCollectionView.Margin>
+            <OnIdiom x:TypeArguments="Thickness" Phone="16,0,0,0" Tablet="71,0,0,0"/>
+        </dxcv:DXCollectionView.Margin>
+        <!--<dxcv:DXCollectionView.SortDescriptions>
+            <dxcv:SortDescription FieldName="Name" SortOrder="Ascending"/>
+        </dxcv:DXCollectionView.SortDescriptions>-->
+        <dxcv:DXCollectionView.GroupDescription>
+            <dxcv:GroupDescription FieldName="Name" GroupInterval="Alphabetical"/>
+        </dxcv:DXCollectionView.GroupDescription>
+        <dxcv:DXCollectionView.GroupHeaderTemplate>
+            <DataTemplate>
+                <StackLayout Margin="2, 0, 18, 10">
+                    <Label FontFamily="Roboto-Medium"
+                       Margin="0,20,0,1"
+                       Padding="17,0,0,0"
+                       TextColor="#55575c"
+                       Text="{Binding Value}"/>
+                    <BoxView BackgroundColor="#B6AFAF" 
+                         HeightRequest="1"/>
+                </StackLayout>
+            </DataTemplate>
+        </dxcv:DXCollectionView.GroupHeaderTemplate>
+    </dxcv:DXCollectionView>
+    <!--<ContentPage.BindingContext>
         <vm:ClienteRepository/>
     </ContentPage.BindingContext>
     <StackLayout>
@@ -16,7 +90,7 @@
                 <dxg:TextColumn FieldName="Ruc" Caption="Ruc" Width="150"/>
                 <dxg:TextColumn FieldName="Codigo" Caption="Código" Width="80"/>
             </dxg:DataGridView.Columns>
-        </dxg:DataGridView>
+        </dxg:DataGridView>-->
     <!--<dxe:SimpleButton Text = "Llamado" 
                   Icon = "add" 
                   BorderThickness="2"
@@ -32,6 +106,6 @@
                   DisabledBackgroundColor="Brown"
                   PressedBackgroundColor="Gray"      
                   Clicked = "SimpleButton_Clicked"/>-->
-    </StackLayout>
+    <!--</StackLayout>-->
 </ContentPage>
     
